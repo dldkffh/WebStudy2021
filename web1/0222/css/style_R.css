@@ -1,0 +1,27 @@
+/* index_R stylesheet */
+
+body {
+    margin: 0;
+    background: #000000;
+}
+
+#wrap {
+    width: 1200px;
+    border: solid 3px #ffffff;
+    margin: 0 auto;
+}
+
+header {
+    height: 200px;
+    background: gray;
+}
+
+section {
+    height: 700px;
+    background: orange;
+}
+
+footer {
+    height: 150px; 
+    background: green;
+}
