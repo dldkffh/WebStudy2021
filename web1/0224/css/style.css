@@ -1,0 +1,137 @@
+/* 인뎃스 레이아웃 CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a img {
+    border: 0;
+}
+
+
+/* 레이아웃 시작 */
+
+body {
+    font-size: 30px;
+    color: dimgray;
+}
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header, main, footer { /* 3개에만 적용할려면? */
+    text-align: center;
+}
+
+/* 헤더 */
+header {
+    height: 250px;
+    border: solid 1px red;
+}
+
+header .logo {
+    width: 200px;
+    height: 150px;
+    border: solid 1px orange;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+header nav {
+    width: 700px;
+    height: 50px;
+    border: solid 1px orange;
+    float: right;
+    margin-top: 150px;
+    margin-right: 50px;
+}
+
+header .gnb li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header .gnb>li>a { /*기본*/
+    color: black;
+}
+
+header .gnb>li>a:hover { /*누를때*/
+    outline-style: dashed;
+}
+
+header .gnb>li>a:active { /*누르고 있을때, 찰라*/
+    color: red;
+}
+
+header .gnb>li>a:visited { /*눌러본거, 잘안씀*/
+    color: red;
+}
+
+
+/* 메인 */
+main {
+    height: 700px;
+    /* border: solid 1px red; */
+}
+
+main aside {
+    width: 350px;
+    height: 700px;
+    border: solid 1px orange;
+    float: left;
+}
+
+main section {
+    width: 500px;
+    height: 700px;
+    border: solid 1px orange;
+    float: left;
+}
+
+main section div {
+    width: 90%;
+    height: 200px;
+    border: 1px solid green;
+    margin: 0 auto;
+}
+
+main section .visual {
+    margin-top: 250px;
+}
+
+main section .group {
+    margin-top: 25px
+}
+
+main section .group article {
+    width: 33.33%;
+    height: 200px;
+    border: 1px solid blue; 
+    float: left;
+}
+
+/* 푸터 */
+footer {
+    height: 200px;
+    border: solid 1px red;
+}
+
+
+
+
+
+
