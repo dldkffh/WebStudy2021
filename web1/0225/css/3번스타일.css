@@ -1,0 +1,43 @@
+/* 3번째 레이아웃 스타일*/
+
+/*초기화*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: 0;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+
+/* 레이아웃 */
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 250px;
+    background-color: aquamarine;
+}
+
+section {
+    height: 700px;
+    background-color: cadetblue;
+}
+
+footer {
+    height: 200px;
+    background-color: cornflowerblue;
+}
