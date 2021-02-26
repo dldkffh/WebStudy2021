@@ -1,6 +1,6 @@
-/* 3번째 레이아웃 스타일*/
+/* 4번 레이아웃 스타일 */
 
-/*초기화*/
+/* reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,28 +8,28 @@
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 img {
-    border: 0;
+    border: none;
 }
 
-ol, ul, li {
+ul, ol, li {
     list-style: none;
 }
 
-
-/* 레이아웃 */
+/* layout */
 #wrap {
     width: 1200px;
     margin: 0 auto;
 }
 
+/* header */
 header {
     height: 250px;
-    background-color: aquamarine;
+    background-color: tan;
 }
 
 header nav {
@@ -50,41 +50,44 @@ header nav {
     margin-right: 50px;
 }
 
-
-
-section {
-    height: 700px;
-    background-color: cadetblue;
+/* section */
+#bigbox{
+    height: 900px;
+    background-color: yellow;
 }
 
-section aside {
-    height: 650px;
-    width: 250px;
-    background-color: lightpink;
+aside {
+    height: 850px;
+    width: 300px;
+    background-color: burlywood;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+#bigbox #box {
+    height: 625px;
+    width: 825px;
+    background-color: rosybrown;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+#bigbox #box article {
+    height: 275px;
+    width: 375px;
+    background-color: azure;
     float: left;
     margin-top: 25px;
     margin-left: 25px;
 }
 
-
-section .box {
-    height: 650px;
-    width: 600px;
-    background-color: plum;
-    float: left;
-    margin-top: 25px;
-    margin-left: 25px;
-}
-
-section .box article {
-    height: 288px;
-    width: 550px;
-    background-color: lightblue;
-    margin-top: 25px;
-    margin-left: 25px;
-}
-
-footer {
+#bigbox footer {
     height: 200px;
-    background-color: cornflowerblue;
+    width: 825px;
+    background-color: rosybrown;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
 }

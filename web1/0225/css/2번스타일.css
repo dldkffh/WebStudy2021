@@ -58,8 +58,8 @@ section .box {
 }
 
 section .box article {
-    width: 660px;
-    height: 290px;
+    width: 675px;
+    height: 287.5px;
     background-color: aqua;
     margin: 0 auto;
     margin-top: 25px;
