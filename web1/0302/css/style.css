@@ -1,0 +1,115 @@
+/* index style sheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+
+/* layout */
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    height: 250px;
+}
+
+header .logo {
+    width: 100px;
+    height: 50px;
+    background-color: #ccc;
+    margin: 20px auto;
+    text-align: center;
+}
+
+header nav {
+    width: 1200px;
+    height: 50px;
+    margin-top: 125px;
+    background-color: #ccc;
+}
+
+main {
+    width: 1000px;
+    height: 1400px;
+    margin: 0 auto;
+}
+
+main #top {
+    width: 1000px;
+    height: 450px;
+}
+
+main>section {
+    width: 475px;
+    height: 700px;
+    margin-top: 50px;
+    border: solid 1px #ccc;
+    float: left;
+}
+
+main>section::last-child {
+    float: right;
+}
+
+main::after{
+    clear: both;
+}
+
+main #left {
+    margin-left: 25px;
+}
+
+main #right {
+    margin-right: 25px;
+}
+
+main .big {
+    width: 412.5px;
+    height: 412.5px;
+    border: solid 1px #ccc;
+    margin-left: 25px;
+    margin-top: 25px;
+    float: left;
+}
+
+main .small {
+    width: 193.75px;
+    height: 193.75px;
+    border: solid 1px #ccc;
+    margin-left: 25px;
+    margin-top: 25px;
+    float: left;
+}
+
+main .small::lastchild {
+    float: right;
+}
+
+
+footer {
+    width: 1200px;
+    height: 80px;
+    background-color: #fff;
+    margin: 0 auto;
+
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 100px;
+}
