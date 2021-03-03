@@ -1,0 +1,94 @@
+/* bnx layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-align: inherit;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+
+#wrap {
+    width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    height: 120px;
+    
+}
+
+header .logo {
+    width: 149px;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.visual {
+    height: 450px;
+    background-color: #ccc;
+}
+
+section {
+    height: 660px;
+    border: 1px solid #777;
+    
+    margin-top: 30px;
+}
+
+section>div {
+    width: 430px;
+    height: 660px;
+    background-color: #ddd;
+    float: left;
+}
+
+section .box-right {
+    float: right;
+}
+
+section .big {
+    height: 425px;
+    border: 1px solid red;
+}
+
+section .group {
+    height: 200px;
+    border: 1px solid red;
+}
+
+section .box-left .big {
+    margin-bottom: 30px;
+}
+
+section .box-right .group {
+    margin-bottom: 30px;
+}
+
+section article {
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    float: left;
+}
+
+section article:last-child {
+    float: right;
+}
+
+
+footer {
+    height: 45px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
