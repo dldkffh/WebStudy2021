@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 250px;
+            height: auto;
+/*            border: 1px solid red;*/
+            margin: 40px auto 0;
+        
+        }
+        
+        table td {
+            height: 45px;
+            padding: 4px 12px;
+        }
+        
+        table td:first-child {
+            text-align: right;
+        }
+        
+        table input {
+            width: 150px;
+            height: 40px;
+            background-color: ivory;
+            border: 0;
+            border-radius: 12px;
+            padding: 3px 10px;
+            outline: 0;
+        }
+        
+        .login {
+            width: 400px;
+            height: 300px;
+            border-radius: 30px;
+            background-color: palegoldenrod;
+            box-shadow: 10px 10px 15px rgba(170,170,170,0.5);
+            margin: 10% auto 0;
+            padding-top: 40px;
+        }
+        
+        button {
+            border: 0;
+            padding: 20px;
+            background-color: transparent;
+/*            border: 1px solid blue;*/
+            float: right;
+            margin-right: 30px;
+            font-size: 16px;
+            color: cadetblue;
+        }
+        
+        button:hover {
+            color: coral;
+            text-decoration-line: underline;
+        }
+        
+        a {
+            clear: both;
+            display: block;
+            padding: 10px;
+/*            border: 1px solid red;*/
+/*            width: 180px;*/
+/*            height: auto;*/
+            text-align: center;
+            color: cadetblue;
+        }
+        
+        a:hover {
+            color: coral;
+            text-decoration-line: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <div class="login">
+            <table>
+                <tr>
+                    <td><lable for="id">ID</lable></td>
+                    <td><input type="text" id="id" name="id" placeholder="ID입력"></td>
+                </tr>
+                <tr>
+                    <td><lable for="pass">PASSWORD</lable></td>
+                    <td><input type="password" id="pass" name="pass"></td>
+                </tr>
+            </table>
+            
+            <button type="submit">로그인</button>
+            
+            <a href="#">아이디/비밀번호 찾기</a>
+        </div>
+    </form>
+</body></html>
