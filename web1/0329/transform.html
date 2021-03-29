@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>변형</title>
+    
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            
+        }
+        
+        .frame, .frame2 {
+            border: 2px solid black;
+            overflow: hidden;
+            margin: 50px;
+        }
+        
+        .box {
+            background: tomato;
+/*            transform: rotate(45deg);*/
+/*            transform: scale(0.7);*/
+/*            transform: skewX(30deg);*/
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+/*            transition-delay: 1s;0*/
+            transform-origin: right bottom;
+        }
+        
+        .frame:hover .box{
+            transform: rotate(45deg);
+        }
+        
+        article {
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            transition-duration: 1s;
+        }
+        
+        .frame2:hover article{
+            transform: translate(100px, 100px) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class="box"></div>
+    </div>
+    
+    <div class="frame2">
+        <article></article>
+    </div>
+</body>
+</html>

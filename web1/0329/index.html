@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃 연습</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bx 슬라이더-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider({
+                auto:true
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="#">logo</a>
+            </h1>
+
+            <nav></nav>
+        </div>
+    </header>
+
+    <div class="visual">
+        <ul class="slider">
+            <li><img src="img/tv.jpg" alt="1"></li>
+            <li><img src="img/olympic.jpg" alt="2"></li>
+            <li><img src="img/rio2016.png" alt="3"></li>
+        </ul>
+    </div>
+
+    <section>
+        <article>공지사항</article>
+        <article>
+            <h2>갤러리</h2>
+            <div class="box">
+                <img src="img/img_155751_1.jpg" alt="p1">
+                <img src="img/unnamed.jpg" alt="p2">
+                <img src="img/bcd.jpg" alt="p3">
+            </div>
+        </article>
+        <article>바로가기아이콘</article>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3 class="logo2">logo</h3>
+        </div>
+    </footer>
+</body></html>
