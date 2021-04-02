@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* desktop layout */
+body > div {
+    border: 1px solid red;
+/*    float: left;*/
+}
+
+.text {
+    font-size: 30px;
+    text-align: center;
+}
+
+.box1 {
+    width: 100%;
+    height: 150px;
+}
+
+.box2 {
+    width: 100%;
+    height: 300px;
+}
+
+.box3,
+.box4,
+.box5 {
+
+    width: 33.33%;
+    height: 300px;
+    float: left;
+}
+
+.box6 {
+    width: 100%;
+    height: 150px;
+    clear: both;
+}
+
+/* tablet layout 중단점:1024px 미만 */
+@media screen and (max-width:1024px) {
+
+    .box3,
+    .box4 {
+        width: 50%;
+    }
+
+    .box5 {
+        width: 100%;
+    }
+
+}
+
+/* smartphone layout 중단점:640px 미만 */
+@media screen and (max-width:640px) {
+    .box3 {
+        width: 100%;
+    }
+
+    .box4 {
+        display: none;
+    }
+
+/*
+    .box5 {
+        width: 100%;
+    }
+*/
+}
