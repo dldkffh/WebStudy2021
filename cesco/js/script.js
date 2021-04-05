@@ -16,7 +16,7 @@ window.onscroll = function () {
 
 /* TOPUP button */
 function scrollFunction() {
-    if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         mainMenu.style.position = "fixed";
     } else if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
