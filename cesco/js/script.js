@@ -4,29 +4,34 @@
 
 
 //Get the button:
-mainMenu = document.getElementById("mainMenu");
-mybutton = document.getElementById("myBtn");
+//fixedNav = document.getElementById("fixedNav");
+topBtn = document.getElementById("topBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
     scrollFunction()
 };
 
-/* TOP Navigation */
-
-/* TOPUP button */
 function scrollFunction() {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        mainMenu.style.position = "fixed";
-    } else if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+    /* TOPUP button */
+    if (document.body.scrollTop > (window.innerHeight) * 2 || document.documentElement.scrollTop > (window.innerHeight) * 2) {
+        topBtn.style.display = "block";
     } else {
-        mybutton.style.display = "none";
+        topBtn.style.display = "none";
+    }
+
+    /* TOP fixed Navigation */
+    if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
+        fixedNav.style.position = "fixed";
+        fixedNav.style.top = "0";
+        fixedNav.style.left = "0";
+    } else {
+        fixedNav.style.position = "relative";
     }
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = window.innerHeight; // For Safari
+    document.documentElement.scrollTop = window.innerHeight; // For Chrome, Firefox, IE and Opera
 }
