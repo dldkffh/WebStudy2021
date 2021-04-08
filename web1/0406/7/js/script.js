@@ -16,6 +16,6 @@ $(".popup-open").click(function(){
     $("#modal").show();
 })
 
-$("#modal .popup").click(function(){
+$(".close").click(function(){
     $("#modal").hide();
 });
