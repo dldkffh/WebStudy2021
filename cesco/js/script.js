@@ -1,8 +1,5 @@
 /*  mainpage java script  */
 
-
-
-
 //Get the button:
 //fixedNav = document.getElementById("fixedNav");
 topBtn = document.getElementById("topBtn");
@@ -21,7 +18,7 @@ function scrollFunction() {
     }
 
     /* TOP fixed Navigation */
-    if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
+    if (document.body.scrollTop > window.innerHeight +75 || document.documentElement.scrollTop > window.innerHeight +75) {
         fixedNav.style.position = "fixed";
         fixedNav.style.top = "0";
         fixedNav.style.left = "0";
