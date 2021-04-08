@@ -19,6 +19,49 @@ a {
     color: inherit;
 }
 
+/* modal */
+#modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+#modal .popup {
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+#modal .popup h4 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#modal .popup p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#modal .popup .close {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    background-color: red;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
 
 /* layout */
 .container {
@@ -45,7 +88,7 @@ header .logo {
 header nav {
     width: 600px;
     height: 40px;
-/*    border: 1px solid red;*/
+    /*    border: 1px solid red;*/
     float: right;
     margin-top: 60px;
     margin-right: 30px;
@@ -53,30 +96,30 @@ header nav {
     z-index: 9999;
 }
 
-header .gnb>li {
+header .gnb > li {
     width: 150px;
     line-height: 40px;
     float: left;
 }
 
-header .gnb>li a{
+header .gnb > li a {
     display: block;
     background-color: #737373;
     text-align: center;
 }
 
-header .gnb>li>a:hover {
+header .gnb > li:hover a {
     background-color: #ffffff;
 }
 
 header .sub a {
-    background: transparent!important;
-/*    color: #fff;*/
+    background: transparent !important;
+    /*    color: #fff;*/
     font-size: 14px;
 }
 
 header .sub li:hover a {
-    background-color: #fff!important;
+    background-color: #fff !important;
 }
 
 .drop-box {
@@ -97,6 +140,22 @@ section {
     width: 1200px;
     height: 300px;
     background-color: #ccc;
+    overflow: hidden;
+}
+
+.visual ul {
+    width: 1200px;
+    height: 900px;
+}
+
+.visual ul li {
+    width: 1200px;
+    height: 300px;
+}
+
+.visual .slider img {
+    width: 1200px;
+    height: 300px;
 }
 
 section {
@@ -104,6 +163,114 @@ section {
     height: 200px;
 }
 
+section article {
+    width: 33.33%;
+    height: 200px;
+    border: 1px solid black;
+    float: left;
+    padding: 10px 15px 7px
+}
+
+section h3 {
+    color: #00c73c;
+}
+
+section table {
+    width: 370px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+section td {
+    height: 30px;
+    padding: 2px 15px;
+}
+
+section td:first-child {
+    width: 260px;
+    border-right: 1px solid #444;
+}
+
+section tr:nth-child(2n) {
+    background-color: #ddd;
+}
+
+section tr:nth-child(2n+1) {
+    background-color: #eee;
+}
+
+section tr:nth-child(1) {
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+section td a {
+    font-size: 14px;
+    color: #333;
+}
+
+section td a:hover {
+    text-decoration: underline;
+}
+
+section .img-box {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+section .img-box img {
+    width: 110px;
+    height: 110px;
+    margin-right: 5px;
+}
+
+section .img-box img:hover {
+    opacity: .8;
+}
+
+section .icon-box {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+section .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: bisque;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    margin-right: 10px;
+}
+
 footer {
     width: 100%;
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer .continaer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer span {
+    float: left;
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 480px;
+}
+
+footer ul li {
+    color: #fff;
+}
+
+footer .foot-box {
+    float: right;
+    width: 200px;
+    margin-right: 40px;
+    text-align: center;
+    margin-top: 20px;
 }

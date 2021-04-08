@@ -7,3 +7,15 @@ $(".sub, .drop-box").hide();
 $(".gnb>li").hover(function(){
     $(".sub, .drop-box").stop().slideToggle();
 });
+
+
+/* 모달창 관련 */
+$("#modal").hide();
+
+$(".popup-open").click(function(){
+    $("#modal").show();
+})
+
+$("#modal .popup").click(function(){
+    $("#modal").hide();
+});
