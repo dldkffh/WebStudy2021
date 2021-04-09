@@ -6,14 +6,22 @@
     <title>CESCO</title>
 
     <link rel="stylesheet" href="css/style.css">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
+    <!-- QUICK MENU  -->
+    <button onclick="topFunction()" class="quick_menu" id="q_shoping" title="shopping">쇼핑</button>
+    <button onclick="topFunction()" class="quick_menu" id="q_check" title="checking hygiene">위생체크</button>
+    <button onclick="topFunction()" class="quick_menu" id="q_consulting" title="consulting sesco service">견적상담</button>
+
+    <!--   TOPUP BUTTON -->
     <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
+    <!--   TOP MENU -->
     <div class="topMenu">
         <h1 class="logo">LOGO</h1>
 
@@ -47,6 +55,7 @@
             </div>
         </div>
     </div>
+    <!--   TOP MENU END -->
 
 
     <!-- GNB NAV -->
@@ -94,7 +103,6 @@
                             <li><a href="#">세스코 공기질 안심관리 솔루션</a></li>
                             <li><a href="#">세스코 식품안전 솔루션</a></li>
                             <li><a href="#">세스코 환경위생 솔루션</a></li>
-
                         </ul>
                     </li>
                     <li><a href="#">장소별 서비스</a>
@@ -143,40 +151,143 @@
             <li><a href="#">세스코 광장</a>
                 <ul class="sub">
                     <li><a href="#">고객리뷰</a></li>
-                    <li><a href="#">Q&amp;A</a></li>
-                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">Q&amp;A</a>
+                        <ul class="sub_sub">
+                            <li><a href="#">Q&amp;A</a></li>
+                            <li><a href="#">FQA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">이벤트</a>
+                        <ul class="sub_sub">
+                            <li><a href="#">지난 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">공지사항</a></li>
-                    <li><a href="#">세스코 홍보</a></li>
+                    <li><a href="#">세스코 홍보</a>
+                        <ul class="sub_sub">
+                            <li><a href="#">TV광고</a></li>
+                            <li><a href="#">인쇄광고</a></li>
+                            <li><a href="#">카자니아 속 세스코</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li><a href="#">My 세스코</a>
                 <ul class="sub">
-                    <li><a href="#">서비스 정보</a></li>
-                    <li><a href="#">나의 활동내역</a></li>
+                    <li><a href="#">서비스 정보</a>
+                        <ul class="sub_sub">
+                            <li><a href="#">계약정보</a></li>
+                            <li><a href="#">서비스대금 납부</a></li>
+                            <li><a href="#">결제정보</a></li>
+                            <li><a href="#">서비스리포트</a></li>
+                            <li><a href="#">소독증명서</a></li>
+                            <li><a href="#">물질안전보건자료(MSDS)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">나의 활동내역</a>
+                        <ul class="sub_sub">
+                            <li><a href="#">세스코 이용후기</a></li>
+                            <li><a href="#">세스코 가입추천</a></li>
+                            <li><a href="#">세스코 서비스 컨설턴트 칭찬하기</a></li>
+                            <li><a href="#">묻고 답하기</a></li>
+                            <li><a href="#">무료방문상담</a></li>
+                            <li><a href="#">고객의 소리</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">회원정보 관리</a></li>
                     <li><a href="#">회원정보 신청</a></li>
                 </ul>
             </li>
         </ul>
 
+        <!--GNB RIGHT : LOGIN -->
         <ul class="fN_right">
             <li><a href="#">로그인</a></li>
             <li><a href="#">회원가입</a></li>
-            <li><a href="#">마이<br>페이지</a></li>
+            <li><a href="#">마이페이지</a></li>
         </ul>
 
     </nav>
-    <!-- GNB NAV end -->
+    <!-- GNB NAV END -->
 
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-    <div class="box4"></div>
 
-    <footer></footer>
+    <!-- CONTENTS -->
+
+    <!-- BOX1 : searching cesco service / review / Q&A -->
+    <div class="box1">
+        <div id="b1_search_service">
+
+        </div>
+
+        <div class="b1_bottom">
+            <div id="b1_review">
+
+            </div>
+            <div id="b1_qna">
+
+            </div>
+        </div>
+    </div>
+    <!-- BOX1 END -->
+
+    <!-- BOX2 : WODER CESCO STORY / MEMBERS SERVICE -->
+    <div class="box2">
+        <div id="b2_wonder_story">
+
+        </div>
+
+        <div class="b2_bottom">
+            <div class="b2_member_service"></div>
+            <div class="b2_member_service"></div>
+            <div class="b2_member_service"></div>
+            <div class="b2_member_service"></div>
+            <div class="b2_member_service"></div>
+        </div>
+
+    </div>
+    <!-- BOX2 END -->
+
+    <!-- BOX3 : SEARCHING / SOLUSTION SERVICE ICON  -->
+    <div class="box3">
+
+        <div id="b3_searching">
+
+        </div>
+
+        <div class="b3_bottom">
+            <div class="b3_solution_service"></div>
+            <div class="b3_solution_service"></div>
+            <div class="b3_solution_service"></div>
+            <div class="b3_solution_service"></div>
+            <div class="b3_solution_service"></div>
+            <div class="b3_solution_service"></div>
+        </div>
+
+    </div>
+    <!-- BOX3 END -->
+
+    <!-- BOX4 : PROMOTION  -->
+    <div class="box4">
+        <div id="b4_top">
+
+        </div>
+        <div id="b4_video">
+
+        </div>
+
+    </div>
+    <!-- BOX4 END -->
+
+
+    <!-- CONTENTS END -->
+
+    <!--  FOOTER -->
+    <footer>
+
+    </footer>
+    <!--  FOOTER END -->
 
 
     <script type="text/javascript" src="js/script.js"></script>
-</body>
-
-</html>
+</body></html>
