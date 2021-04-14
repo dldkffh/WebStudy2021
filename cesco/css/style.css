@@ -1,12 +1,7 @@
 /* test.html style css - test.css */
 
 /* FONT */
-@font-face {
-    font-family: 'Noto Sans KR';
-    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 @font-face {
     font-family: 'cesco';
@@ -25,7 +20,6 @@
 
 /* RESET */
 * {
-    font-family: 'cesco';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -114,7 +108,7 @@ body {
 .box3,
 .box4 {
     width: 100%;
-    height: 100vh;
+    height: 970px;
     border: 1px red solid;
     /*    position: relative;*/
 }
@@ -136,14 +130,14 @@ body {
 
 .topMenu .box {
     width: 33.33%;
-    height: 100vh;
+    height: 970px;
     border: 1px orange solid;
     display: table-cell;
     position: relative;
     overflow: hidden;
 }
 
-.topMenu .box>img {
+.topMenu .box > img {
     height: 100vh;
     position: absolute;
 }
@@ -172,7 +166,7 @@ body {
     text-align: center;
 }
 
-.topMenu .box .tM_contents>button {
+.topMenu .box .tM_contents > button {
     margin: 0 auto;
     display: none;
 }
@@ -196,43 +190,58 @@ body {
 
 /* GNB NAV */
 #fixedNav {
-    height: 75px;
+    height: 100px;
     width: 100%;
-    background-color: yellowgreen;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
     position: relative;
 }
 
-#fixedNav h1 {
+#fixedNav .logo {
     float: left;
-    line-height: 75px;
+    margin-top: 20px;
     margin-left: 100px;
     margin-right: 100px;
 }
 
-#fixedNav .gnb>li {
+/*
+#fixedNav .gnb {
+    font-family: 'cesco';
+    font-weight: bold;
+}
+*/
+
+#fixedNav .gnb > li {
     float: left;
-    line-height: 75px;
+    line-height: 100px;
     margin-left: 75px;
+    font-family: 'cesco';
+    font-weight: bold;
+    font-size: 25px;
 }
 
 #fixedNav .gnb .sub {
     display: none;
     position: absolute;
     z-index: 999;
-    top: 75px;
-    left: 350px;
+    top: 100px;
+    left: 320px;
+    background-color: #fff;
 }
 
-#fixedNav .gnb .sub>li {
+#fixedNav .gnb .sub > li {
     float: left;
     line-height: 50px;
     margin-left: 50px;
 }
 
-#fixedNav .gnb .sub .sub_sub {}
 
 #fixedNav .fN_right {
     float: right;
+    font-family: 'cesco';
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 100px;
 }
 
 #fixedNav .gnb li:hover .sub {
@@ -240,9 +249,9 @@ body {
 }
 
 
-.fN_right>li {
+.fN_right > li {
     float: left;
-    line-height: 75px;
+    line-height: 100px;
     margin-right: 25px;
 }
 
@@ -291,6 +300,7 @@ body {
     height: 300px;
     margin: 0 auto;
     /*    border: 1px orange solid;*/
+    
 }
 
 .box2 .b2_bottom .b2_member_service {
@@ -305,24 +315,83 @@ body {
 /* BOX 3 */
 .box3 #b3_searching {
     width: 1200px;
-    height: 300px;
+    height: 120px;
     margin: 0 auto;
-    border: 1px orange solid;
-    /* margin-top: 75px; */
+    /*    border: 1px orange solid; */
+    margin-top: 130px;
 }
 
+.box3 #b3_searching .b3_search_service {
+    width: 800px;
+    height: 55px;
+    border: 3px #f15c22 solid;
+    /* cesco orange */
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.box3 #b3_searching h2 {
+    text-align: center;
+    font-family: 'cesco';
+    font-weight: bold;
+}
+
+.box3 #b3_searching .b3_search_service input {
+    width: 700px;
+    height: 40px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 15px;
+    border-style: none;
+}
+
+.box3 #b3_searching .b3_search_service button {
+    border: 0;
+    background-color: #fff;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.box3 #b3_searching .b3_search_service button img {
+    height: 30px;
+    width: 30px;
+}
+
+
 .box3 .b3_bottom {
-    width: 900px;
+    width: 1200px;
     height: 500px;
     margin: 0 auto;
     /*    border: 1px orange solid;*/
+    margin-top: 110px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
+
 .box3 .b3_bottom .b3_solution_service {
-    width: 300px;
+    width: 240px;
     height: 250px;
-    border: 1px green solid;
+    /*    border: 1px green solid;*/
     float: left;
+}
+
+.box3 .b3_bottom img {
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.box3 .b3_bottom a {
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
 }
 
 /* BOX 3 END */
@@ -330,17 +399,31 @@ body {
 /* BOX 4 */
 .box4 #b4_top {
     width: 1200px;
-    height: 300px;
+    height: 120px;
     margin: 0 auto;
-    border: 1px orange solid;
-    /* margin-top: 75px; */
+    margin-top: 125px;
+    /*    border: 1px orange solid;*/
+    /*     margin-top: 130px; */
+}
+
+.box4 #b4_top p {
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'cesco';
+    font-weight: bold;
 }
 
 .box4 #b4_video {
     width: 1200px;
     height: 500px;
     margin: 0 auto;
-    border: 1px orange solid;
+    /*    border: 1px orange solid;*/
+}
+
+.box4 #b4_video iframe {
+    display: block;
+    margin: 0 auto;
 }
 
 /* BOX 4 END */
@@ -354,7 +437,66 @@ body {
 footer {
     width: 100%;
     height: 250px;
-    border: 1px blue solid;
+    /*    border: 1px blue solid;*/
+    background-color: #1879bd;
+    font-family: 'Noto Sans KR', sans-serif;
 }
+
+footer .f_wrap {
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+footer .f_wrap .f_top {
+    width: 1200px;
+    height: 25px;
+    /*    margin-top: 30px;*/
+}
+
+footer .f_wrap .f_top .logo {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+footer .f_wrap .f_top .f_nav li {
+    float: left;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 40px;
+    color: #fff;
+}
+
+footer .f_wrap .f_top .f_nav li:last-child {
+    margin-right: 0;
+}
+
+footer .f_info .f_info_left {
+    width: 960px;
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+
+footer .f_info .f_info_right {
+    height: 60px;
+    width: 200px;
+    float: right;
+    /*    border: 1px solid #fff;*/
+    margin-top: 35px;
+}
+
+footer .f_info .f_info_right img {
+    float: right;
+    height: 50px;
+    margin-right: 15px
+}
+
 
 /* FOOTER END */

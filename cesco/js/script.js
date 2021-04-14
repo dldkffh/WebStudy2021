@@ -11,14 +11,14 @@ window.onscroll = function () {
 
 function scrollFunction() {
     /* TOPUP button */
-    if (document.body.scrollTop > (window.innerHeight) * 2 || document.documentElement.scrollTop > (window.innerHeight) * 2) {
+    if (document.body.scrollTop > 1940 || document.documentElement.scrollTop > 1940) {
         topBtn.style.display = "block";
     } else {
         topBtn.style.display = "none";
     }
 
     /* TOP fixed Navigation */
-    if (document.body.scrollTop > window.innerHeight +75 || document.documentElement.scrollTop > window.innerHeight +75) {
+    if (document.body.scrollTop > 1045 || document.documentElement.scrollTop > 1045) {
         fixedNav.style.position = "fixed";
         fixedNav.style.top = "0";
         fixedNav.style.left = "0";
