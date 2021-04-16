@@ -6,12 +6,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Black Han Sans';
+    src: url('/font/BlackHanSans-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'YESGothic-Regular', sans-serif;
+    font-family: 'YESGothic-Regular';
 }
 
 ul,
@@ -27,10 +33,19 @@ a {
 
 
 /* LAYOUT */
-/*HEAER*/
+/*HEADER*/
 header {
     width: 100%;
     height: 110px;
+}
+
+.fnb_background {
+    width: 100%;
+    height: 170px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 99;
+    top: 100px;
 }
 
 .h_wrap {
@@ -53,43 +68,61 @@ header {
     float: left;
     font-size: 12px;
     margin-left: 15px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .h_menu nav {
-    width: 800px;
+    width: 650px;
     height: 40px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     float: right;
-    margin-top: 60px;
-    margin-right: 30px;
+    margin-top: 25px;
+    /* margin-right: 30px; */
     position: relative;
     z-index: 999;
-}
-
-.h_menu nav ul {
-    float: right;
+    right: -133px;
 }
 
 .h_menu nav .gnb > li {
-    width: 150px;
+    width: 125px;
     line-height: 40px;
     float: left;
-    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.h_menu nav .gnb > li:first-child, .h_menu nav .gnb > li:nth-child(2) {
+    width: 90px;
+}
+
+.h_menu nav .gnb > li:last-child {
+    width: 180px;
 }
 
 .h_menu nav .sub {
-    width: 100%;
-    float: left;
-    position: absolute;
-
     background-color: #fff;
-    border-bottom: #ddd;
 }
 
+.h_menu nav .sub > li {
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: normal;
+}
 
+.h_menu nav .sub:nth-child(3) {
+    width: 200px;
+}
 
-/*HEAER END*/
+.h_menu .top_menu > li:hover {
+    text-decoration-line: underline;
+}
+
+.h_menu nav .sub > li:hover a {
+    background-color: #ed1c24;
+    color: #fff;
+}
+
+/*HEADER END*/
 
 /*CONTENTS*/
 contents {
@@ -132,7 +165,11 @@ contents .slider img {
     font-weight: bold;
     font-size: 15px;
     display: block;
-    margin-top: 125px;
+    margin-top: 120px;
+}
+
+.sns_contents .sns_link #sns_text p:first-child {
+    font-size: 19px;
 }
 
 .sns_contents .sns_link a {
@@ -185,7 +222,123 @@ contents .slider img {
     float: left;
     margin-right: 10px;
     margin-bottom: 5px;
+    position: relative;
 }
+
+/* SUB CONTENTS - HEADLINE, TEXT */
+.sub_contents .sc_left #sc_plus .headline {
+    position: absolute;
+    z-index: 99;
+    bottom: 45px;
+    left: 20px;
+    /*    font-family: 'Black Han Sans';*/
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sub_contents .sc_left #sc_plus .line {
+    position: absolute;
+    z-index: 99;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sub_contents .sc_left #sc_new .headline {
+    position: absolute;
+    z-index: 99;
+    bottom: 45px;
+    right: 15px;
+    /*    font-family: 'Black Han Sans';*/
+    font-size: 12px;
+    color: #020106;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sub_contents .sc_left #sc_new .line {
+    position: absolute;
+    z-index: 99;
+    bottom: 20px;
+    right: 15px;
+    color: #020106;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.sub_contents .sc_left #sc_lotteMall .headline {
+    position: absolute;
+    z-index: 99;
+    bottom: 45px;
+    right: 20px;
+    /*    font-family: 'Black Han Sans';*/
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sub_contents .sc_left #sc_lotteMall .line {
+    position: absolute;
+    z-index: 99;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sub_contents .sc_left #sc_populer .headline {
+    position: absolute;
+    z-index: 99;
+    bottom: 45px;
+    right: 15px;
+    /*    font-family: 'Black Han Sans';*/
+    font-size: 12px;
+    color: #020106;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sub_contents .sc_left #sc_populer .line {
+    position: absolute;
+    z-index: 99;
+    bottom: 20px;
+    right: 15px;
+    color: #020106;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.sub_contents .sc_left #sc_where .headline {
+    position: absolute;
+    z-index: 99;
+    bottom: 45px;
+    right: 15px;
+    /*    font-family: 'Black Han Sans';*/
+    font-size: 12px;
+    color: #020106;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sub_contents .sc_left #sc_where .line {
+    position: absolute;
+    z-index: 99;
+    bottom: 20px;
+    right: 15px;
+    color: #020106;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/* SUB CONTENTS - HEADLINE, TEXT END */
 
 
 .sub_contents #sc_right {
@@ -208,7 +361,7 @@ contents .slider img {
 #sc_right #sc_notice .sc_notice_top a {
     display: block;
     float: left;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-left: 25px;
     font-size: 14px;
     font-weight: bold;
@@ -222,7 +375,7 @@ contents .slider img {
 #sc_right #sc_notice .sc_notice_bottom {
     width: 345px;
     height: 14px;
-    margin-top: 65px;
+    margin-top: 60px;
     margin-left: 20px;
     border-collapse: collapse;
     font-size: 12px;
@@ -239,6 +392,10 @@ contents .slider img {
 
 #sc_right #sc_notice .sc_notice_bottom td:nth-child(2n) {
     float: right;
+}
+
+#sc_right #sc_notice .sc_notice_top a:hover {
+    text-decoration: underline;
 }
 
 #sc_right #sc_notice .sc_notice_bottom td:nth-child(2n-1):hover {
@@ -267,7 +424,7 @@ footer {
 }
 
 .f_top .f_top_wrap .logo {
-    margin-top: 75px;
+    margin-top: 60px;
     margin-left: 40px;
     float: left;
 }
