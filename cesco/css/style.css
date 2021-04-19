@@ -140,6 +140,8 @@ body {
 .topMenu .box > img {
     height: 100vh;
     position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .topMenu .tM_contents {
@@ -173,6 +175,7 @@ body {
 
 
 .topMenu .box:hover {
+    transition: 0.5s;
     width: 65%;
 }
 
@@ -201,7 +204,7 @@ body {
     float: left;
     margin-top: 20px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 137.5px;
 }
 
 /*
@@ -214,25 +217,49 @@ body {
 #fixedNav .gnb > li {
     float: left;
     line-height: 100px;
-    margin-left: 75px;
+    padding-left: 37.5px;
+    padding-right: 37.5px;
     font-family: 'cesco';
     font-weight: bold;
     font-size: 25px;
 }
 
+#fixedNav #sub_background {
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    position: absolute;
+    z-index: 99;
+    top: 99px;
+}
+
 #fixedNav .gnb .sub {
-    display: none;
+/*    display: none;*/
+    width: 1200px;
     position: absolute;
     z-index: 999;
     top: 100px;
-    left: 320px;
+    left: 325px;
     background-color: #fff;
+}
+
+#fixedNav .gnb .sub:first-child li {
+    width: 33.33%;
 }
 
 #fixedNav .gnb .sub > li {
     float: left;
     line-height: 50px;
     margin-left: 50px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#fixedNav .gnb .sub > li > a {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 
@@ -244,9 +271,11 @@ body {
     margin-right: 100px;
 }
 
+/*
 #fixedNav .gnb li:hover .sub {
     display: block;
 }
+*/
 
 
 .fN_right > li {
@@ -385,7 +414,7 @@ body {
     margin: 0 auto;
 }
 
-.box3 .b3_bottom a {
+.box3 .b3_bottom .b3_txt {
     margin: 0 auto;
     font-size: 15px;
     text-align: center;

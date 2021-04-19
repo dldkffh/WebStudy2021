@@ -1,5 +1,20 @@
 /*  mainpage java script  */
 
+$(document).ready(function () {
+    $(".sub, #sub_background").hide();
+    
+    $("#sub_background,.gnb>li").mouseover(function() {
+        $("#sub_background").stop().show();
+        $(this).children(".sub").show();
+    })
+    
+    $("#sub_background, .gnb>li").mouseout(function() {
+        $("#sub_background").hide();``
+        $(this).children(".sub").hide();
+    })
+});
+
+
 //Get the button:
 //fixedNav = document.getElementById("fixedNav");
 topBtn = document.getElementById("topBtn");

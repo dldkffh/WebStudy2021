@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <script src="js/script.js"></script>
+    
 </head>
 
 <body>
@@ -29,7 +30,7 @@
             <img src="img/견적상담1.jpg" alt="배경">
             <div class="tM_contents">
 
-                <img class=".tM_icon" src="icon/보행해충.png" alt="쇼핑 아이콘">
+                <img class=".tM_icon" src="icon/shearching.png" alt="쇼핑 아이콘">
                 <div class="tM_text">쇼핑</div>
                 <button>바로가기</button>
 
@@ -40,7 +41,7 @@
             <img src="img/견적상담1.jpg" alt="배경">
             <div class="tM_contents">
 
-                <img class=".tM_icon" src="icon/보행해충.png" alt="위생체크 아이콘">
+                <img class=".tM_icon" src="icon/shearching.png" alt="위생체크 아이콘">
                 <div class="tM_text">위생체크</div>
                 <button>바로가기</button>
             </div>
@@ -49,7 +50,7 @@
         <div class="box">
             <img src="img/견적상담1.jpg" alt="배경">
             <div class="tM_contents">
-                <img class=".tM_icon" src="icon/보행해충.png" alt="견적상담 아이콘">
+                <img class=".tM_icon" src="icon/shearching.png" alt="견적상담 아이콘">
                 <div class="tM_text">견적상담</div>
                 <button>바로가기</button>
             </div>
@@ -61,6 +62,7 @@
     <!-- GNB NAV -->
     <nav id="fixedNav">
         <h1 class="logo"><img class=".tM_icon" src="img/logo.gif" alt="세스코 로고"></h1>
+        <div id="sub_background"></div>
         <ul class="gnb">
             <li><a href="#">세스코</a>
                 <ul class="sub">
@@ -260,7 +262,8 @@
                     <input type="text" id="search_service" name="id" placeholder="찾으시는 서비스를 입력하세요">
 
                     <button type="submit">
-                        <img class="" src="icon/보행해충.png" alt="돋보기 아이콘">
+                        <img class="" src="icon/shearching.png" alt="돋보기 아이콘">
+                        <div><a href="https://www.flaticon.com/kr/authors/dave-gandy" title="Dave Gandy"></a><a href="https://www.flaticon.com/kr/" title="Flaticon"></a></div>
                     </button>
                 </div>
             </form>
@@ -268,44 +271,54 @@
 
         <div class="b3_bottom">
             <div class="b3_solution_service">
-                <img class="" src="icon/보행해충.png" alt="돋보기 아이콘">
-                <a href="#">향균안전(Viruscare)</a>
+                <a class="b3_img" href="#"><img class="" src="icon/virus+bacteria.png" alt="향균안전(Viruscare) 아이콘"></a>
+                <div><a href="https://www.flaticon.com/kr/authors/vitaly-gorbachev" title="Vitaly Gorbachev"></a><a href="https://www.flaticon.com/kr/" title="Flaticon"></a></div>
+                <a class="b3_txt" href="#">향균안전(Viruscare)</a>
             </div>
             <div class="b3_solution_service">
-                <img class="" src="icon/보행해충.png" alt="돋보기 아이콘">
-                <a href="#">보행해충방제</a>
+                <a class="b3_img" href="#"><img class="" src="icon/walking_pests.png" alt="보행해충방제 아이콘"></a>
+                <div><a href="https://www.flaticon.com/kr/authors/vitaly-gorbachev" title="Vitaly Gorbachev"></a><a href="https://www.flaticon.com/kr/" title="Flaticon"></a></div>
+                <a class="b3_txt" href="#">보행해충방제</a>
             </div>
             <div class="b3_solution_service">
-                <img class="" src="icon/보행해충.png" alt="돋보기 아이콘">
-                <a href="#">비래해충방제</a>
+                <a class="b3_img" href="#"><img class="" src="icon/flying_pests.png" alt="비래해충방제 아이콘"></a>
+                <div><a href="https://www.flaticon.com/kr/authors/vitaly-gorbachev" title="Vitaly Gorbachev"></a><a href="https://www.flaticon.com/kr/" title="Flaticon"></a></div>
+                <a class="b3_txt" href="#">비래해충방제</a>
             </div>
             <div class="b3_solution_service">
-                <img class="" src="icon/보행해충.png" alt="돋보기 아이콘">
-                <a href="#">위생안전프로그램</a>
+                <a class="b3_img" href="#"><img class="" src="icon/hygiene_safety.png" alt="위생안전프로그램 아이콘"></a>
+                <div><a href="https://www.flaticon.com/kr/authors/vitaly-gorbachev" title="Vitaly Gorbachev"></a><a href="https://www.flaticon.com/kr/" title="Flaticon"></a></div>
+                <a class="b3_txt" href="#">위생안전프로그램</a>
             </div>
             <div class="b3_solution_service">
-                <img class="" src="icon/보행해충.png" alt="돋보기 아이콘">
-                <a href="#">공기질안심관리</a>
+                <a class="b3_img" href="#"><img class="" src="icon/air_quality_management.png" alt="공기질안심관리 아이콘"></a>
+                <div><a href="https://www.flaticon.com/kr/authors/vitaly-gorbachev" title="Vitaly Gorbachev"></a><a href="https://www.flaticon.com/kr/" title="Flaticon"></a></div>
+                <a class="b3_txt" href="#">공기질안심관리</a>
             </div>
             <div class="b3_solution_service">
-                <img class="" src="icon/보행해충.png" alt="돋보기 아이콘">
-                <a href="#">시험분석</a>
+                <a class="b3_img" href="#"><img class="" src="icon/test_analysis.png" alt="공기질안심관리 아이콘"></a>
+                <div><a href="https://www.flaticon.com/kr/authors/vitaly-gorbachev" title="Vitaly Gorbachev"></a><a href="https://www.flaticon.com/kr/" title="Flaticon"></a></div>
+                <a class="b3_txt" href="#">시험분석</a>
             </div>
             <div class="b3_solution_service">
-                <img class="" src="icon/보행해충.png" alt="돋보기 아이콘">
-                <a href="#">식품안전교육</a>
+                <a class="b3_img" href="#"><img class="" src="icon/academy.png" alt="식품안전교육 아이콘"></a>
+                <div><a href="https://www.flaticon.com/kr/authors/vitaly-gorbachev" title="Vitaly Gorbachev"></a><a href="https://www.flaticon.com/kr/" title="Flaticon"></a></div>
+                <a class="b3_txt" href="#">식품안전교육</a>
             </div>
             <div class="b3_solution_service">
-                <img class="" src="icon/보행해충.png" alt="돋보기 아이콘">
-                <a href="#">통합이물분석</a>
+                <a class="b3_img" href="#"><img class="" src="icon/material_analysis.png" alt="통합이물분석 아이콘"></a>
+                <div><a href="https://www.flaticon.com/kr/authors/vitaly-gorbachev" title="Vitaly Gorbachev"></a><a href="https://www.flaticon.com/kr/" title="Flaticon"></a></div>
+                <a class="b3_txt" href="#">통합이물분석</a>
             </div>
             <div class="b3_solution_service">
-                <img class="" src="icon/보행해충.png" alt="돋보기 아이콘">
-                <a href="#">위생체크</a>
+                <a class="b3_img" href="#"><img class="" src="icon/hygiene_checking.png" alt="위생체크 아이콘"></a>
+                <div><a href="https://www.flaticon.com/kr/authors/vitaly-gorbachev" title="Vitaly Gorbachev"></a><a href="https://www.flaticon.com/kr/" title="Flaticon"></a></div>
+                <a class="b3_txt" href="#">위생체크</a>
             </div>
             <div class="b3_solution_service">
-                <img class="" src="icon/보행해충.png" alt="돋보기 아이콘">
-                <a href="#">수질안심관리</a>
+                <a class="b3_img" href="#"><img class="" src="icon/water_management.png" alt="수질안심관리 아이콘"></a>
+                <div><a href="https://www.flaticon.com/kr/authors/vitaly-gorbachev" title="Vitaly Gorbachev"></a><a href="https://www.flaticon.com/kr/" title="Flaticon"></a></div>
+                <a class="b3_txt" href="#">수질안심관리</a>
             </div>
         </div>
 
