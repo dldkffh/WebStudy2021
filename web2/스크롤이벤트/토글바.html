@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>토글바만들기</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+            $(document).ready(function(){
+                $(".side_bar a").click(function(){
+                    if($(".side_bar").hasClass("active")) { //펼쳐져있다면
+                        $(".side_bar").removeClass("active"); //닫히는 상태로 가고
+                        
+                        $("i").removeClass("fa-times"); //닫힘 X 버튼을 버리고
+                        $("i").addClass("fa-bars");  //햄버거메뉴 = 가져와라
+                    }
+                    
+                    else {
+                        $(".side_bar").addClass("active"); //사이드바 펼쳐지게
+                        $("i").removeClass("fa-bars"); //삼선 아이콘이 지워지고
+                        $("i").addClass("fa-times"); // 닫힘 X 버튼을 가져와라
+                    }
+                    return false;
+                });
+            });
+        //]]>
+    </script>
+    <style type="text/css">
+        html, body {
+            height:100%;
+        }
+        .side_bar {
+            width:300px;
+            position:fixed;
+            top:0px;
+            left:-260px;
+            background-color:yellowgreen;
+            height:100%;
+            transition:left .3s;
+        }
+        .side_bar a{
+            float:right;
+            margin-top:10px;
+            margin-right:15px;
+            color:green;
+        }
+        .side_bar.active {
+            left:0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="side_bar">
+        <a href="#"><i class="fas fa-bars"></i></a>
+    </div>
+</body>
+</html>
