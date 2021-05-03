@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>아코디언</title>
+
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('dd:not(:first)').css('display', 'none');
+            $('dt:first').addClass('on');
+
+            $('dl dt').click(function() {
+                if ($('+dd', this).css('display') == 'none') {
+                    $('dd').slideUp("slow");
+                    $('+dd', this).slideDown("slow");
+                    $('dt').removeClass('on');
+                    $(this).addClass('on');
+                }
+            }).mouseover(function() {
+                $(this).addClass('over');
+            }).mouseout(function() {
+                $(this).removeClass('over');
+            });
+
+
+        });
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        dl {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        dt {
+            height: 35px;
+            line-height: 35px;
+            background-color: darkgray;
+            text-align: center;
+        }
+
+        dd {
+            height: 300px;
+            background-color: lightgray;
+        }
+
+        dt.over {
+            background-color: #eee;
+        }
+
+        dt.on {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <dl>
+        <dt>s1</dt>
+        <dd>내용1</dd>
+
+        <dt>s2</dt>
+        <dd>내용2</dd>
+
+        <dt>s3</dt>
+        <dd>내용3</dd>
+    </dl>
+</body></html>
