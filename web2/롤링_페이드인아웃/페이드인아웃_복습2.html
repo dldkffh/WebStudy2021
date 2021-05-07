@@ -7,13 +7,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         
-        /* 야 안돼! */
+        /* 야 돼! */
         $(document).ready(function() {
 //            $("#slider li:first").siblings().hide();
             $('#slider li:gt(0)').hide();
             
             setInterval(function(){
-                 $("#slider li").fadeOut(1000).next().fadeIn(1000).end().appendTo("#slider");
+                 $("#slider li:first").fadeOut(1000).next().fadeIn(1000).end().appendTo("#slider");
             }, 3000);
         });
         

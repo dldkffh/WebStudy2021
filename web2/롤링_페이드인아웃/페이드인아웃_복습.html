@@ -5,12 +5,12 @@
     <title>페이드 인아웃 슬라이더</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-    /* 야 안돼! */
+    /* 야 돼! */
         $(document).ready(function() {
             $(".slide li:first").siblings().hide();
             
             setInterval(function() {
-                $(".slide li").fadeOut(1000).next().fadeIn(1000).end().appendTo(".slide");
+                $(".slide li:first").fadeOut(1000).next().fadeIn(1000).end().appendTo(".slide");
             }, 3000);
         });
     
