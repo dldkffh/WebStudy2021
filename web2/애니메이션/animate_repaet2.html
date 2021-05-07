@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#prev").click(function() {
+
+                $(".box ul").animate({
+                    marginLeft: '-250px'
+                },'slow');
+
+            });
+
+            $("#next").click(function() {
+
+                $(".box ul").animate({
+                    marginLeft: '0px'
+                },'slow');
+            });
+
+        });
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 250px;
+            height: 170px;
+            overflow: hidden;
+/*            border: 1px solid red;*/
+        }
+
+        .box ul {
+            width: 500px;
+            height: 170px;
+        }
+
+        .box ul li {
+            width: 250px;
+            height: 170px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <ul>
+            <li><img src="images/flower.jpg" alt="flower"></li>
+            <li><img src="images/sea.jpg" alt="sea"></li>
+        </ul>
+    </div>
+    
+    <button id="prev">prev</button>
+    <button id="next">next</button>
+    
+</body></html>
