@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="jquery-3.2.1.js"></script>
+<script type="text/javascript">
+	//<![CDATA[
+		$(document).ready(function(){
+			$("ul.panel li:not("+$("ul.tab li a.selected").attr("href")+")").hide();
+			$("ul.tab li a").click(function(){
+				$("ul.tab li a").removeClass("selected");
+				$(this).addClass("selected");	
+				$("ul.panel li").fadeOut("slow");
+				$($(this).attr("href")).fadeIn("slow");
+				return false;
+			});
+		});	
+	//]]>
+</script>
+<style type="text/css">
+	*{padding:0; margin:0; border:0; box-sizing:border-box;}
+	#container {
+		width:500px;
+		margin:50px auto;	
+	}
+	ul.tab {height:40px;border-bottom:solid 1px #999;}
+	ul.tab li {
+		list-style:none;
+		width:100px;
+		height:40px;
+		float:left;
+	}
+	ul.tab li a {
+		background:white;
+		border-top:solid 1px #999;
+		border-right:solid 1px #999;
+		display:block;
+		line-height:39px;
+		text-align:center;
+		text-decoration:none;
+		color:#222;
+	}
+	ul.tab li:first-child {
+		border-left:solid 1px #999;	
+	}
+	ul.tab li a.selected {
+		background:white;
+		border-top:solid 3px #336699;
+		line-height:37px;
+		border-bottom:solid 1px white;
+	}
+	ul.panel {
+		clear:both;	
+		border:1px solid #999;
+		height:300px;
+	}
+	ul.panel li {
+		list-style:none;
+		position:absolute;
+		padding:10px;
+	}
+</style>
+</head>
+
+<body>
+	<div id="container">
+    	<ul class="tab"><!--탭버튼영역-->
+        	<li><a href="#tab1" class="selected">HTML</a></li>
+        	<li><a href="#tab2">CSS</a></li>
+        	<li><a href="#tab3">JAVASCRIPT</a></li>
+        	<li><a href="#tab4">JQuery</a></li>
+        	<li><a href="#tab5">SASS</a></li>
+        </ul>
+        <ul class="panel"><!--탭컨텐츠영역-->
+        	<li id="tab1">동해물과동해물과동해물과동해물과동해물과동해물과</li>
+        	<li id="tab2">백두산이백두산이백두산이백두산이백두산이백두산이</li>
+        	<li id="tab3">마르고닳도록마르고닳도록마르고닳도록마르고닳도록</li>
+        	<li id="tab4">하느님이하느님이하느님이하느님이하느님이하느님이</li>
+        	<li id="tab5">보우하사우리나라만세보우하사우리나라만세</li>
+        </ul>
+    </div>
+</body>
+</html>

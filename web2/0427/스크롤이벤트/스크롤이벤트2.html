@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>222</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+
+                var value = $(window).scrollTop();
+
+                if (value > 100) {
+                    $(".text1").animate({
+                        marginLeft : "200px", 
+                        marginTop : "200px"
+                    });
+
+                }
+                
+                
+                /*else if(value<100) {
+                     $(".text1").animate({
+                        marginLeft : "0px", 
+                        marginTop : "0px"
+                    });
+                }*/
+                
+                
+                if(value>1100){
+                    $(".text2").css( "opacity", "1");
+                }
+
+                
+                else {
+                    $(".text2").css("opacity", "0");
+                }
+                
+                
+                // top 메뉴 부분
+                
+                if( value>2000){
+                   
+                    $(".top").fadeIn(500);
+                   }
+                else{
+                    $(".top").fadeOut(500);
+                }
+
+            });
+
+
+
+        });
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 100%;
+            height: 1020px;
+            position: relative;
+        }
+
+        section:nth-child(even) {
+            background-color: lightsteelblue;
+        }
+
+        section:nth-child(odd) {
+            background-color: lightgoldenrodyellow;
+        }
+
+        section div {
+            width: 300px;
+            height: 300px;
+            background-color: yellowgreen;
+            position: absolute;
+        }
+
+        .text1 {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .text2 {
+            right: 200px;
+            bottom: 150px;
+            opacity: 0;
+            transition: 1s;
+        }
+        
+        .top {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: gold;
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+            z-index: 9999;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="top">top</div>
+   
+    <section class="box1">
+        <div class="text1">text1</div>
+    </section>
+    <section class="box2">
+        <div class="text2">text2</div>
+    </section>
+    <section class="box3">
+        <div class="text3">text3</div>
+    </section>
+    <section class="box4">
+        <div class="text4">text4</div>
+    </section>
+    <section class="box5">
+        <div class="text5">text5</div>
+    </section>
+</body></html>
