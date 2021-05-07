@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
-        
-            /* 야 안돼! */
+        /* 야 안돼! */
 
-         * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
-        ul, ol, li {
+
+        ul,
+        ol,
+        li {
             list-style: none;
         }
-        
+
         .box {
             width: 400px;
             height: 300px;
             border: 1px solid black;
             margin: 100px auto;
-/*            overflow: hidden;*/
+            overflow: hidden;
         }
-        
+
         .box ul {
             width: 800px; //이게 이미지 전체만큼 커야함
+            height: 300px;
         }
-        
+
         .box ul li {
-            float: left;
+/*            float: left;*/
         }
-        
+
         .box ul li img {
-            width: 100%;
+            width: 400px;
+            height: 300px;
+            float: left;
         }
     </style>
 </head>
+
 <body>
     <div class="box">
         <ul>
@@ -47,21 +52,18 @@
             <li><img src="images/flower.jpg" alt="flower" id="flower"></li>
         </ul>
     </div>
-    
+
     <script>
-    
-        $("dog").click(function() {
-            $(".box ul").animate({
-                marginLeft: '-400px';
+        $("#dog").click(function() {
+            $("ul").animate({
+                marginLeft: '-400px'
             }, 500);
-        });  
-        
-        $("flower").click(function() {
-                $(".box ul").animate({
-                marginLeft: '0px';
+        });
+
+        $("#flower").click(function() {
+            $("ul").animate({
+                marginLeft: '0px'
             }, 500);
-            });
-        
+        });
     </script>
-</body>
-</html>
+</body></html>
