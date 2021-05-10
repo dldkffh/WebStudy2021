@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+           $('.next').click(function() {
+              $('.slide').animate({
+                 marginLeft:"-=1200px" 
+              }, 1000);
+           });
+            $('.prev').click(function() {
+              $('.slide').animate({
+                 marginLeft:"+=1200px" 
+              }, 1000);
+           });
+        });
+    </script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        ul, ol, li {
+            list-style: none;
+        }
+        
+        .visual {
+            width: 1200px;
+            height: 300px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        
+        .slide {
+            width: 3600px;
+            height: 300px;
+            margin-left: -1200px;
+        }
+        
+        .slide li {
+            float: left;
+            width: 1200px;
+            height: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="visual">
+        
+        <ul class="slide">
+            <li><img src="images/page01.jpg" alt="page01"></li>
+            <li><img src="images/page02.jpg" alt="page02"></li>
+            <li><img src="images/page03.jpg" alt="page03"></li>
+        </ul>
+        
+        <button class="prev">prev</button>
+        <button class="next">next</button>
+        
+    </div>
+</body>
+</html>
