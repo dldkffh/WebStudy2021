@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            /*$("ul li").hover(function() {
+               $("img", this).eq(1).fadeToggle(300);
+            });*/
+
+            $('ul li').mouseenter(function() {
+                $('img', this).eq(1).stop().fadeOut(300);
+            }).mouseleave(function() {
+                $('img', this).eq(1).stop().fadeIn(300);
+            });
+        });
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        ul {
+            width: 200px;
+            height: 100px;
+            /*            border: 1px solid red;*/
+        }
+
+        ul li {
+            width: 100px;
+            height: 100px;
+            float: left;
+            position: relative;
+            /*            border: 1px solid red;*/
+            overflow: hidden;
+        }
+
+        ul li a img {
+            height: 100%;
+            margin-left: -10px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#">
+                <img src="img/apple.jpg" alt="apple">
+                <img src="img/mango.jpg" alt="mango">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/orange.jpg" alt="orange">
+                <img src="img/wmelon.jpg" alt="wmelon">
+            </a>
+        </li>
+    </ul>
+</body></html>
