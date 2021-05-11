@@ -24,7 +24,8 @@ $(function(){
 			$('.allpage').stop().css('margin-left','-1200px');
 		});
 	});
-	$('.btn_prev').click(function(){		$('.allpage').animate({marginLeft:'+=1200px'},1000, function(){
+	$('.btn_prev').click(function(){		
+        $('.allpage').animate({marginLeft:'+=1200px'},1000, function(){
 			$('.allpage li:last').prependTo('.allpage');
 			$('.allpage').css('margin-left','-1200px');
 		});
