@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Play:wght@400;700&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border-style: none;
+}
+
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+}
+
+/* VIDEO */
+.vid {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -60px;
+    left: 0;
+    opacity: 0.9;
+}
+
+.vid video {
+    width: 100%;
+    min-width: 1600px;
+}
+
+h1.logo {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 10;
+}
+
+h1.logo img {
+    width: 280px;
+    height: auto;
+}
+
+/* HEADER */
+header {
+    width: 700px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -420px;
+    background: linear-gradient(-45deg, #e6fc55, #b9fb05, #97e031);
+    transform: skewX(-40deg);
+}
+
+/* GNB */
+ul#gnb {
+    width: 220px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+
+ul#gnb>li {
+    position: relative;
+}
+
+ul#gnb>li>a {
+    display: block;
+    width: 220px;
+    height: 50px;
+    font: bold 18px/3 play;
+    /*폰트 사이즈/줄간격*/
+    color: #222;
+    padding-right: 40px;
+    text-align: right;
+}
+
+ul#gnb>li.on>a {
+    background-color: #111;
+    color: #fff;
+}
+
+ul#gnb>li:hover>a {
+    background: #111;
+    color: #fff;
+}
+
+ul#gnb em {
+    display: inline-block;
+    transform: skewX(40deg);
+}
+
+/* GNB - SUB MENU */
+ul#gnb ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+ul#gnb li:hover>ul {
+    left: 205px;
+    opacity: 1;
+}
+
+ul#gnb li ul a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background: #222;
+    border-bottom: 1px solid #b9fb05;
+    font: bold 16px/2.5 arial;
+    color: #fff;
+    padding-left: 50px;
+    margin-bottom: 3px;
+    transition: all 0.3s;
+}
+
+ul#gnb li ul a:hover {
+    background-color: #b9fb05;
+    color: #333;
+}
+
+/* TEXT BOX */
+ul#sns {
+    position: fixed;
+    top: 60px;
+    right: 50px;
+}
+
+ul#sns li {
+    float: left;
+    margin-right: 30px;
+}
+
+ul#sns .fa {
+    font-size: 25px;
+    color: #b9fb05;
+    opacity: 0.5;
+    transform: scale(1);
+    /* 기준값 */
+    transition: all 0.5s;
+}
+
+ul#sns .fa:hover {
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+section.txtBox {
+    width: 340px;
+    height: 280px;
+    position: fixed;
+    top: 200px;
+    right: 70px;
+}
+
+section.txtBox .txt {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    font-size: 34px;
+    font-family: play;
+    color: #bbb;
+    letter-spacing: -2px;
+}
+
+section.txtBox .txt b {
+    font: bold 34px ariral;
+    color: #b9fb05;
+    margin-left: 20px;
+}
+
+section.txtBox .tit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 160px;
+    color: #b9fb05;
+    font-family: monoton;
+    letter-spacing: -1px;
+}
+
+section.txtBox .tit em {
+    font-size: 50px;
+    font-family: play;
+    color: #fff;
+}
+
+/* BOTTOM CONTENTS BOX */
+section#side {
+    width: 800px;
+    height: 100%;
+    position: fixed;
+    transform: skewX(-40deg);
+    right: -800px;
+    bottom: 0;
+    background-color: #111;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+section#side .con {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: 150px;
+    bottom: 0;
+    background-color: #000;
+    transition: 1s;
+    padding: 10px;
+}
+
+section#side:hover {
+    right: -500px;
+    opacity: 0.8;
+}
+
+section#side:hover .con {
+    left: 50px;
+}
+
+section#side .con p {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+}
+
+section#side .con p em {
+    display: inline-block;
+    font: bold 16px/1.7 arial;
+    color: #b9fb05;
+    transform: skewX(40deg);
+}
+
+section#side .con p img {
+    width: 300px;
+    height: 70px;
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+
+section#side .con p img:hover {
+    opacity: 1;
+}
+
+section#side .con p:nth-child(1) {
+    bottom: 270px;
+    transform: translateX(200px);
+    transition: all 0.4s;
+}
+
+section#side .con p:nth-child(2) {
+    bottom: 160px;
+    transform: translateX(200px);
+    transition: all 0.8s;
+    
+}
+
+section#side .con p:nth-child(3) {
+    bottom: 50px;
+    transform: translateX(200px);
+    transition: all 1.2s;
+}
+
+section#side:hover .con p { 
+    transform: translateX(0px);
+}	
+
+section#side .btnContents {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    color: #b9fb05;
+    transform: skewX(40deg);
+}
+
+section#side:hover .btnContents {
+    left: 700px;
+}
+
+section#side .btnContents i {
+    font-size: 60px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+@keyframes ani {
+    0% {
+        right: 0;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        right: 100px;
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+section#side .btnContents i:nth-child(1) {
+    animation: ani linear 1.5s 0s infinite;
+}
+
+section#side .btnContents i:nth-child(2) {
+    animation: ani linear 1.5s 0.5s infinite;
+}
+
+section#side .btnContents i:nth-child(3) {
+    animation: ani linear 1.5s 1s infinite;
+}

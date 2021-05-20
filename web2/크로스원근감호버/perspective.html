@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> 원근감 만들기</title>
+    <style>
+	 /*perspective를 이용하면 원래의 위치에서 잡아당기거나 밀어내는 원근감 표현 가능*/
+	 
+	 	/* 파란 벽 창문 예시*/
+		div {
+			margin:0 auto;
+			width:300px;	height:500px;
+            perspective:500px;  
+			/*부모에 원근감 속성을 주고 공간을 확보- 숫자가 높을수록 변형 좁음*/
+        }
+		
+        div img {
+            transform:rotateX(0deg);  /* 이벤트 발생 전 형태 */
+			transition:0.5s ease-in;  /* 0.5초동안 마지막에 빨라짐 */
+        }
+		div:hover img {
+			transform:rotateX(60deg);  /* 이벤트 발생시(호버) 변형될 형태 */
+		}
+			
+        
+		/* 안개꽃 예시*/
+	
+		section {
+			width:500px; height: 500px;
+            perspective: 300px; 	/* 변형될 개체에 원근감을 주면 원근감이 일어날 공간이 부족함*/
+            transform: rotateY(0deg);	/* 이벤트 발생 전 형태 */
+            transition: 0.5s ease-out;
+		}
+		section:hover {
+            transform: rotateY(180deg);   /* 이벤트 발생시(호버) 변형될 형태 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    	<img src="bg.png" alt="파란벽 창문" width="500">
+    </div>
+    
+    <section>
+    	<img src="misty.png" alt="안개꽃" width="500">
+    </section>
+</body>
+
+</html>
