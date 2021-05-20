@@ -1,0 +1,65 @@
+/* Maldives CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #555;
+}
+
+img {
+    border: none;
+}
+
+body {
+    font: 12px/1.6 'Poiret One';
+    color: #555;
+}
+
+/* LAYOUT */
+/* HEADER */
+header {
+    width: 15%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+/* NAV */
+nav {
+    width: 85%;
+    height: 35px;
+    background-color: #212121;
+    position: relative;
+    margin-left: 15%;
+    transition: all 0.5s;
+}
+
+/* SECTION */
+section {
+    width: 85%;
+    position: relative;
+    margin-left:15%;
+}
+
+article {
+    float: left;
+    height: 260px;
+    transition: all 0.5s;
+    animation:scale 1s 1;
+}
+
