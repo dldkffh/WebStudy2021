@@ -1,0 +1,237 @@
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    background: #2b2f3e;
+    z-index: 9990;
+}
+
+header h1 {
+    float: left;
+    margin-top: 24px;
+}
+
+header h1 img.forPC {
+    margin-left: 22%;
+}
+
+header .cnt {
+    float: right;
+    width: 77%;
+}
+
+header .cnt .gnb ul li {
+    float: left;
+    width: 20%;
+}
+
+header .cnt .gnb>ul>li>a {
+    font-size: 18px;
+    color: white;
+    height: 80px;
+    display: block;
+    padding: 31px 0px;
+    text-align: center;
+}
+
+header .cnt .gnb>ul>li>a:hover {
+    color: yellow;
+}
+
+header .cnt .gnb ul li .layerSnb {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        background: white;
+        height: 100px;
+        border-bottom: solid 1px #ddd;
+        text-align: center;
+    }
+
+    header h1 {
+        float: none;
+        display: inline-block;
+    }
+
+    header .m_menu_btn {
+        position: absolute;
+        top: 32px;
+        left: 20px;
+    }
+
+    header .m_menu_btn a {
+        width: 49px;
+        height: 43px;
+        display: block;
+        text-indent: -99999px;
+        font-size: 0px;
+    }
+
+    header .m_menu_btn a::before {
+        content: '';
+        display: block;
+        width: 49px;
+        height: 43px;
+        position: absolute;
+        background: url(../img/obj_header.png) no-repeat 0 -30px;
+    }
+
+    header .search {
+        position: absolute;
+        top: 32px;
+        right: 20px;
+        width: 49px;
+        height: 42px;
+        border: solid 1px #ccc;
+    }
+
+    header .search>a {
+        width: 47px;
+        height: 41px;
+        text-indent: -99999px;
+        font-size: 0px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    header .search>a::before {
+        content: '';
+        display: block;
+        width: 49px;
+        height: 43px;
+        background: url(../img/obj_header.png) no-repeat -50px -30px;
+    }
+
+    header .search>a.on::before {
+        background-position: -112px -30px;
+    }
+
+    header .search_box {
+        position: fixed;
+        top: 100px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 125px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 37px 102px;
+    }
+
+    header .search_box .search_cont {
+        position: relative;
+        padding-right: 125px;
+    }
+
+    header .search_box .search_cont input[type="text"] {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #ddd;
+        background: white;
+        padding: 15px 20px;
+    }
+
+    header .search_box .search_cont button {
+        position: absolute;
+        width: 114px;
+        height: 50px;
+        margin: 0;
+        border: none;
+        background: #0f9f75;
+        font-size: 20px;
+        color: #fff;
+        top: 0;
+        right: 0;
+    }
+
+    .layerSnb_mo {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 9990;
+    }
+
+    .snb_mo {
+        overflow: scroll;
+        width: 330px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: #4e5366;
+        z-index: 9999;
+    }
+
+    .snb_mo>ul>li>a { /*1depth*/
+        display: block;
+        width: 100%;
+        padding: 18px 38px;
+        color: white;
+        background: #2b2f3e;
+        border: 1px solid #111319;
+        font-size: 17px;
+    }
+
+    .snb_mo>ul>li>.depth2>li {
+        border-top: 1px solid #999999;
+    }
+
+    .snb_mo>ul>li>.depth2>li>a {
+        display: block;
+        width: 100%;
+        padding: 14px 38px;
+        font-size: 15px;
+        color: white;
+    }
+
+    .snb_mo .depth2 .depth3 {
+        padding: 18px 0px;
+        background: #f3f3f3;
+    }
+
+    .snb_mo .depth2 .depth3>li>a {
+        font-size: 14px;
+        padding: 9px 15px 9px 38px;
+        color: #4e5366;
+        width: 100%;
+        display: block;
+    } 
+
+    .snb_mo .depth2 .depth3>li>a::before { /*depth3 앞 동그라미*/
+        content: '';
+        display: inline-block;
+        width: 5px; height: 5px;
+        margin: -1px 7px 0px 0px;
+        vertical-align: middle;/*세로정렬*/
+        border-radius: 50%;
+        -webkit-border-radius:50%; /*브라우저별 접두사*/
+        -moz-border-radius:50%;
+        background: #4e5366;
+    }
+
+    .nodata {
+        display: none;
+        font-size: 0px;
+        line-height: 0px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header .search_box {
+        padding: 37px 50px;
+    }
+}
+
+@media all and (max-width:420px) {
+    header .search_box {
+        padding: 20px 25px;
+        height: 90px;
+    }
+}
