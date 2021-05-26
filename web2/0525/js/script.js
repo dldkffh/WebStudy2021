@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     $(".snb_mo > ul > li ul").hide();
 
-    $(".snb_mo > ul > li a").click(function() {
+    $(".snb_mo > ul > li > a").click(function() {
         $("+ul", this).slideToggle("slow");
         return false;
     });
