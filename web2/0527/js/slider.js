@@ -1,9 +1,9 @@
 jQuery(document).ready(function () { //대소문자 구분함 j Q u e r y
 
-    var checkboxInterval = 0; //이제 멈춤 개쩔어 
+    let checkboxInterval = 0; //이제 멈춤 개쩔어 
     $('#checkbox').click(function () {   
         if ($(this).prop("checked")) {
-            checkboxInterval = setInterval(function () {
+            checkboxInterval = setInterval(function () { //재할당 let 가능
                 moveRight();
             }, 3000);
         } else {
