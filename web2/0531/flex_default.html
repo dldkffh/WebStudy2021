@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,23 @@
     <title>flex</title>
 
     <style>
+        /*참고 : http://tcpschool.com/css/css3_expand_flexbox*/
+
         * {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		ul,
-		li {
-			list-style: none;
-		}
+        ul,
+        li {
+            list-style: none;
+        }
 
-		a {
-			text-decoration: none;
-			color: inherit;
-		}
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
         .container {
             height: 100vh;
@@ -35,7 +38,7 @@
         }
 
         h1 a {
-            color:darkslateblue;
+            color: darkslateblue;
         }
 
         nav {
@@ -59,12 +62,13 @@
 
         .content {
             display: flex;
-			flex: 1;
+            flex: 1;
         }
 
         .content .main {
             flex: 1;
             order: 2;
+            /*flex 순서 설정*/
             padding: 20px;
             border-left: solid 1px darkslateblue;
             border-right: solid 1px darkslateblue;
@@ -77,6 +81,7 @@
         .left {
             order: 1;
         }
+
         .right {
             order: 3;
         }
@@ -88,10 +93,9 @@
             justify-content: center;
             align-items: center;
         }
-
-
     </style>
 </head>
+
 <body>
     <div class="container">
         <nav>
@@ -125,4 +129,5 @@
         </footer>
     </div>
 </body>
+
 </html>
