@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipingMask</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 1200px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            /* flex-direction:row-reverse; 거꾸로 */
+        }
+
+        article {
+            /* flex: 1; */
+            margin: 5px;
+            border: 2px solid gray;
+            font-size: 20px;
+        }
+
+        .trape:first-child {
+            /* order: 3; 거꾸로 */
+            width: 500px;
+        }
+
+        .trape:nth-child(2){
+            /* order: 2; 거꾸로 */
+            flex: 1;
+        }
+
+        .trape:last-child {
+            /* order: 1; 거꾸로 */
+            flex: 3;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        ul {
+            width: 1000px;
+            height: 100px;
+            background-color : black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            /* flex: 1; */
+            width: 150px;
+            background-color: greenyellow;
+            border: 2px solid hotpink;
+            margin: 0.2%;
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article class="trape">1</article>
+        <article class="trape">2</article>
+        <article class="trape">3</article>
+    </section>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

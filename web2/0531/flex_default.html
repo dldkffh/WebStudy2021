@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+
+    <style>
+        * {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		ul,
+		li {
+			list-style: none;
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+        .container {
+            height: 100vh;
+            background-color: rosybrown;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            flex: 1;
+        }
+
+        h1 a {
+            color:darkslateblue;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            background-color: silver;
+            align-items: center;
+            /* justify-content: space-between; */
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li a {
+            display: block;
+            padding: 0px 1em;
+            /* color: #fff; */
+        }
+
+        .content {
+            display: flex;
+			flex: 1;
+        }
+
+        .content .main {
+            flex: 1;
+            order: 2;
+            padding: 20px;
+            border-left: solid 1px darkslateblue;
+            border-right: solid 1px darkslateblue;
+        }
+
+        aside {
+            padding: 20px;
+        }
+
+        .left {
+            order: 1;
+        }
+        .right {
+            order: 3;
+        }
+
+        footer {
+            display: flex;
+            height: 60px;
+            background-color: silver;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1 class="logo"><a href="#">Company Name</a></h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="main">
+                <p>Put Content Here</p>
+                <a href="#">Return Home</a>
+            </div>
+            <aside class="left">
+                <h2>Left Sliderbar</h2>
+                <p>Put your content here</p>
+            </aside>
+            <aside class="right">
+                <h2>Right Sliderbar</h2>
+                <p>Put your content here</p>
+            </aside>
+        </div>
+
+        <footer>
+            flex 2019 &copy; All Copyrights reserved
+        </footer>
+    </div>
+</body>
+</html>
