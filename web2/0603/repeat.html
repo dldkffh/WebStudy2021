@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 참고 http://tcpschool.com/css/css3_expand_flexbox*/ -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul, li ,ol {
+            list-style: none;
+        }
+
+        section {
+            height: 100px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrap_2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .con3 {
+            flex: 1;
+        }
+
+        .wrap {
+            flex: 2;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .con4, .con5 {
+            flex: 1;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .con2 {
+                display: none;
+            }
+
+            .wrap_2 {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            }
+            
+            .con3 {
+                flex: 1;
+            }
+
+            .wrap {
+                flex: 1;
+            }
+        }
+            
+
+        @media (max-width: 480px) {
+            .wrap_2 {
+                height: 300px;
+            }
+
+            .con3 {
+                flex: 1;
+            }
+
+            .wrap {
+                flex: 2;
+                flex-direction: column; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="con1">1</section>
+    <section class="con2">2</section>
+    <div class="wrap_2">
+        <!-- 결국에는 두번 묶는 거라니... 3번이 사이즈 고정이면 더 좋을 텐데 -->
+        <section class="con3 in">3</section> 
+        <div class="wrap">
+            <section class="con4 in">4</section>
+            <section class="con5 in">5</section>
+        </div>
+        
+    </div>
+    <section class="con6">6</section>
+</body>
+</html>
