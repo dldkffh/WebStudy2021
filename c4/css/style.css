@@ -1,0 +1,165 @@
+/*  */
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333333;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #ffffff;   
+}
+
+
+/* layout */
+/* aside */
+aside {
+    width: 200px;
+    height: 650px;
+    float: left;
+    border: 1px solid orange;
+}
+
+h1.logo {
+    display: block;
+    width: inherit;
+    height: 100px;
+}
+
+h1.logo img {
+    width: 190px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+/* main */
+main {
+    width: 800px;
+    height: 650px;
+    float: left;
+    border: 1px solid orange;
+}
+
+/* visual */
+.visual {
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slider {
+    width: 2400px;
+    height: inherit;
+}
+
+.slider li {
+    float: left;
+}
+
+.slider li img {
+    width: 800px;
+    height: 350px;
+}
+
+/* section */
+section {
+    width: 800px;
+    height: 200px;
+}
+
+article {
+    height: 200px;
+    float: left;
+    border: 1px solid orange;
+    padding: 5px;
+}
+
+article.notice {
+    width: 40%;
+}
+
+article.notice b {
+    display: inline-block;
+}
+
+article.notice table {
+    font-size: 13px;
+    display: inline-block;
+    width: inherit;
+}
+
+article.notice table tr td:first-child {
+    width: 80%;
+    
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+article.notice table tr td:last-child {
+    width: 20%;
+}
+
+article.gallery {
+    width: 30%;
+}
+
+article.goto {
+    width: 30%;
+}
+
+
+/* footer */
+footer {
+    width: 800px;
+    height: 100px;
+}
+
+footer h2.logo {
+    width: 150px;
+    height: inherit;
+    float: left;
+    border: 1px solid orange;
+    padding: 5px;
+}
+
+footer h2.logo img {
+    width: 140px;
+    margin-top: 22px;
+}
+
+footer .copyright {
+    width: 500px;
+    height: inherit;
+    float: left;
+    border: 1px solid orange;
+    padding: 5px;
+}
+
+footer .copyright p {
+    font-size: 13px;
+}
+
+footer .familysite {
+    width: 150px;
+    height: inherit;
+    float: left;
+    border: 1px solid orange;
+    padding: 7px;
+}
+
+footer .familysite ul {
+    text-align: center;
+    
+}
+
