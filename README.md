@@ -12,11 +12,12 @@ HTML, CSS, JQuery, Javascript, Photoshop, Illustrator 내용이 남아있다.
 
 ### bens
 [이 양성과정의 최종 결과물](https://dldkffh-webstudy2021-bens.netlify.app/)
+bens 가구점을 주제로 만든 사이트
 
 <br/>
 
 ### banner, moblie-uiux
-해당 폴더는 Photoshop, Illustrator 산출물 폴더다. 배너와 모바일 화면 내용이 나온다.
+해당 폴더는 Photoshop, Illustrator 산출물 폴더. 배너와 모바일 화면 내용.
 
 <br/>
 
@@ -26,11 +27,11 @@ HTML, CSS, JQuery, Javascript, Photoshop, Illustrator 내용이 남아있다.
 <br/>
 
 ### a1, b1, b3, c1, c4
-해당 폴더는 GTQ 그래픽기술자 (Photoshop, HTML, CSS, JQuery) 시험 연습용 예제다.
+해당 폴더는 GTQ 그래픽기술자 (Photoshop, HTML, CSS, JQuery) 시험 연습용 예제
 
 <br/>
 
 ### web1, web2
-해당 폴더는 그날 한 내용을 백업하기 위해 사용했던 폴더다.
+해당 폴더는 그날 한 내용을 백업하기 위해 사용했던 폴더
 
 <br/>
