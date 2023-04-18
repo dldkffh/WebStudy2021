@@ -1,0 +1,21 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Hind Vadodara', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
+
+@font-face {
+    font-family: 'Times Newer Roman';
+    src: local('TimesNewerRoman-Regular');
+    src: url(TimesNewerRoman-Regular.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times Newer Roman';
+    src: local('TimesNewerRoman-Bold');
+    src: url(TimesNewerRoman-Bold.otf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
