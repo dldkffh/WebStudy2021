@@ -11,7 +11,7 @@ HTML, CSS, JQuery, Javascript, Photoshop, Illustrator 내용이 남아있다.
 <br/>
 
 ### bens
-[이 양성과정의 최종 결과물](https://dldkffh-webstudy2021-bens.netlify.app/)
+[이 양성과정의 최종 결과물](https://dldkffh-webstudy2021-bens.netlify.app/)  
 bens 가구점을 주제로 만든 사이트
 
 <br/>
